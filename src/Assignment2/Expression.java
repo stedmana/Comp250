@@ -1,7 +1,8 @@
 package Assignment2;
 
 /*
-
+Student Name: Alexander Stedman
+Student Number: 260627145
  */
 
 import java.util.Stack;
@@ -20,7 +21,7 @@ public class Expression {
 
     Expression(String expressionString) throws IllegalArgumentException {
         tokenList = new ArrayList<String>();
-        StringBuilder token = new StringBuilder();
+        //StringBuilder token = new StringBuilder();
 
         //ADD YOUR CODE BELOW HERE
         //
@@ -33,8 +34,13 @@ public class Expression {
                 workingSet.deleteCharAt(i);
             }
         }
+
         for (int i = 0; i < workingSet.length(); i++) {
-            if (workingSet.charAt(i) == '(' || workingSet.charAt(i) == ')' || workingSet.charAt(i) == '[' || workingSet.charAt(i) == ']' || workingSet.charAt(i) == '*' || workingSet.charAt(i) == '/') {
+            if (workingSet.charAt(i) == '(' || workingSet.charAt(i) == ')'
+                    || workingSet.charAt(i) == '['
+                    || workingSet.charAt(i) == ']'
+                    || workingSet.charAt(i) == '*'
+                    || workingSet.charAt(i) == '/') {
                 tokenList.add(String.valueOf(workingSet.charAt(i)));
                 //workingSet.deleteCharAt(i);
             }
@@ -92,7 +98,7 @@ public class Expression {
         //..
         //ADD YOUR CODE ABOVE HERE
         //count items between parenthesis, if there are 2 then its unary, if 3 then its a binary op
-        /*while (tokenList.size() > 1) {
+        while (tokenList.size() > 1) {
             int countSinceLastBracket = 0;
             for (int i = 0; i < tokenList.size(); i++) {
                 if (tokenList.get(i).equals("(")
@@ -158,8 +164,8 @@ public class Expression {
                         int value = valueStack.pop();
                         value = value / valueStack.pop();
                         tokenList.remove(i - 1);
-                        tokenList.remove((i - 1));
-                        tokenList.remove(i-2);
+                        tokenList.remove((i - 2));
+                        tokenList.remove(i-3);
                         tokenList.add(i - 3, Integer.toString(value));
                         operatorStack.pop();
                         i -= 2;
@@ -178,22 +184,29 @@ public class Expression {
                         i -= 2;
                         break;
                     }
-                    if (tokenList.get(i).equals("]")) {
-                        int token = Integer.getInteger(tokenList.get(i-1));
-                        int out = Math.abs(token);
-                        if (out != token) {
-                            tokenList.remove(i-1);
-                            tokenList.add(i-1, String.valueOf(out));
-                            operatorStack.pop();
-                            break;
-                        }
-                    }
-                    else if (tokenList.get(i).equals(")")) {
+                    if (tokenList.get(i).equals(")")) {
                         operatorStack.pop();
                         tokenList.remove(i);
                         tokenList.remove(i-2);
                         break;
                     }
+                    if (tokenList.get(i).equals("]") && isInteger(tokenList.get(i-1))) {
+                        String inStr = tokenList.get(i-1);
+                        StringBuilder workingString = new StringBuilder(tokenList.get(i-1));
+                        if (workingString.charAt(0) == '-') {
+                            workingString.deleteCharAt(0);
+                            inStr = workingString.toString();
+                        }
+
+                        tokenList.remove(i-1);
+                        tokenList.add(i-1, inStr);
+                        tokenList.remove(i);
+                        tokenList.remove(i-2);
+                        operatorStack.pop();
+                        break;
+
+                    }
+
 
                 }
 
@@ -201,9 +214,10 @@ public class Expression {
             }
             operatorStack.clear();
         }
-                */
-        //return Integer.getInteger(tokenList.get(0));   // DELETE THIS LINE
-        return null;
+
+        if (isInteger((tokenList.get(0)))) {
+            return Integer.valueOf(tokenList.get(0));
+        } else {return 11;}
     }
 
     //Helper methods

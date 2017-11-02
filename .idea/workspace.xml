@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9879bf54-3ceb-406e-989b-16de825ea0d8" name="Default" comment="Added some conde to wordTreeNode">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+    <list default="true" id="9879bf54-3ceb-406e-989b-16de825ea0d8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/A1.zip" afterPath="$PROJECT_DIR$/src/Assignment 1/A1.zip" />
       <change beforePath="$PROJECT_DIR$/src/Ass3/WordTree.java" afterPath="$PROJECT_DIR$/src/Ass3/WordTree.java" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment2/Expression.java" afterPath="$PROJECT_DIR$/src/Assignment2/Expression.java" />
+      <change beforePath="$PROJECT_DIR$/src/NaturalNumber.java" afterPath="$PROJECT_DIR$/src/Assignment 1/NaturalNumber.java" />
+      <change beforePath="$PROJECT_DIR$/src/TesterPosted.java" afterPath="$PROJECT_DIR$/src/Assignment 1/TesterPosted.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,15 +31,15 @@
       <file leaf-file-name="WordTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Ass3/WordTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1684">
-              <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+            <state relative-caret-position="678">
+              <caret line="236" column="25" lean-forward="false" selection-start-line="236" selection-start-column="25" selection-end-line="236" selection-end-column="25" />
               <folding>
-                <element signature="e#5741#5742#0" expanded="true" />
-                <element signature="e#5770#5771#0" expanded="true" />
-                <element signature="e#5952#5953#0" expanded="true" />
-                <element signature="e#5977#5978#0" expanded="true" />
-                <element signature="e#6111#6112#0" expanded="true" />
-                <element signature="e#6146#6147#0" expanded="true" />
+                <element signature="e#5872#5873#0" expanded="true" />
+                <element signature="e#5901#5902#0" expanded="true" />
+                <element signature="e#6083#6084#0" expanded="true" />
+                <element signature="e#6108#6109#0" expanded="true" />
+                <element signature="e#6242#6243#0" expanded="true" />
+                <element signature="e#6277#6278#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,7 +84,7 @@
     <option name="height" value="878" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -94,13 +97,45 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Comp250" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Comp250" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Comp250" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Comp250" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Comp250" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Comp250" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Ass3" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Assignment 1" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -216,12 +251,20 @@
       <updated>1509634920511</updated>
       <workItem from="1509634922229" duration="85000" />
       <workItem from="1509635020279" duration="34000" />
-      <workItem from="1509642210925" duration="1652000" />
+      <workItem from="1509642210925" duration="2371000" />
     </task>
+    <task id="LOCAL-00001" summary="Added some conde to wordTreeNode">
+      <created>1509643894237</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1509643894237</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1771000" />
+    <option name="totallyTimeSpent" value="2490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="878" extended-state="6" />
@@ -229,7 +272,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -240,7 +283,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16944444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -284,12 +327,12 @@
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#5741#5742#0" expanded="true" />
-            <element signature="e#5770#5771#0" expanded="true" />
-            <element signature="e#5952#5953#0" expanded="true" />
-            <element signature="e#5977#5978#0" expanded="true" />
-            <element signature="e#6111#6112#0" expanded="true" />
-            <element signature="e#6146#6147#0" expanded="true" />
+            <element signature="e#5872#5873#0" expanded="true" />
+            <element signature="e#5901#5902#0" expanded="true" />
+            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#6108#6109#0" expanded="true" />
+            <element signature="e#6242#6243#0" expanded="true" />
+            <element signature="e#6277#6278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -323,12 +366,30 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5741#5742#0" expanded="true" />
-            <element signature="e#5770#5771#0" expanded="true" />
-            <element signature="e#5952#5953#0" expanded="true" />
-            <element signature="e#5977#5978#0" expanded="true" />
-            <element signature="e#6111#6112#0" expanded="true" />
-            <element signature="e#6146#6147#0" expanded="true" />
+            <element signature="e#5872#5873#0" expanded="true" />
+            <element signature="e#5901#5902#0" expanded="true" />
+            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#6108#6109#0" expanded="true" />
+            <element signature="e#6242#6243#0" expanded="true" />
+            <element signature="e#6277#6278#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ass3/TesterA3starter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment 1/NaturalNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1710">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15891#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -341,25 +402,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ass3/TesterA3starter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ass3/WordTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1684">
-          <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+        <state relative-caret-position="678">
+          <caret line="236" column="25" lean-forward="false" selection-start-line="236" selection-start-column="25" selection-end-line="236" selection-end-column="25" />
           <folding>
-            <element signature="e#5741#5742#0" expanded="true" />
-            <element signature="e#5770#5771#0" expanded="true" />
-            <element signature="e#5952#5953#0" expanded="true" />
-            <element signature="e#5977#5978#0" expanded="true" />
-            <element signature="e#6111#6112#0" expanded="true" />
-            <element signature="e#6146#6147#0" expanded="true" />
+            <element signature="e#5872#5873#0" expanded="true" />
+            <element signature="e#5901#5902#0" expanded="true" />
+            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#6108#6109#0" expanded="true" />
+            <element signature="e#6242#6243#0" expanded="true" />
+            <element signature="e#6277#6278#0" expanded="true" />
           </folding>
         </state>
       </provider>

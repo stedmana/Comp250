@@ -177,8 +177,10 @@ public class WordTree
 			WordTreeNode child       = new WordTreeNode();
 
 			// ADD YOUR CODE BELOW HERE
-
-
+			child.charInParent = c;
+			child.depth = this.depth + 1;
+			endOfWord = false;
+			child.children = new WordTreeNode[NUMCHILDREN];
 			// ADD YOUR CODE ABOVE HERE
 			if (this.children[c] == null) {
 				this.children[c] = child;
@@ -225,8 +227,14 @@ public class WordTree
 		public String toString()
 		{
 			// ADD YOUR CODE BELOW HERE
+			String output = "";
+			WordTreeNode currentNode = this;
+			while (currentNode.charInParent != (char)0) {
+				output = currentNode.charInParent + output;
+				currentNode = currentNode.parent;
+			}
 
-			return null;   //  REMOVE THIS CODE STUB
+			return output;   //  REMOVE THIS CODE STUB
 			
 			// ADD YOUR CODE ABOVE HERE
 		}
