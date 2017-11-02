@@ -178,7 +178,14 @@ public class WordTree
 
 			// ADD YOUR CODE BELOW HERE
 
+
 			// ADD YOUR CODE ABOVE HERE
+			if (this.children[c] == null) {
+				this.children[c] = child;
+			} else {
+				return this.children[c];
+			}
+
 
 			return child;
 		}
