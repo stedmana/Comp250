@@ -17,7 +17,7 @@ public class WordTree
 	// Empty tree has just a root node.  All the children are null.
 
     //this is a test method
-    public static void main(String[] args) {
+    public void main(String[] args) {
         WordTreeNode test = new WordTreeNode();
         test.createChild('a');
         test.createChild('b');
