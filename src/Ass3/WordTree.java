@@ -26,8 +26,11 @@ public class WordTree {
         test.getRoot().endOfWord = true;
         test.getRoot().getChild('c').createChild('d');
         test.getRoot().getChild('c').getChild('d').createChild('D');
+        test.insert("Dank memes for lyfe");
+        test.insert("cdEjk");
         System.out.println("hello");
         System.out.println(test.getPrefix("cdDqu"));
+        System.out.println(test.getPrefix("Dank memes for lies"));
         //System.out.println(test.getRoot().getChild('c').getChild('d').getChild('D').toString());
     }
 
@@ -44,6 +47,12 @@ public class WordTree {
      */
     public void insert(String word) {
         //  ADD YOUR CODE BELOW HERE
+        WordTreeNode workingNode = this.getPrefixNode(word);
+        for (int i = workingNode.toString().length(); i < word.length(); i ++) {
+            workingNode.createChild(word.charAt(i));
+            workingNode = workingNode.getChild(word.charAt(i));
+        }
+        workingNode.endOfWord = true;
 
 
         //  ADD YOUR ABOVE HERE
@@ -96,9 +105,12 @@ public class WordTree {
      */
     public boolean contains(String word) {
         //   ADD YOUR CODE BELOW HERE
-
-        return false;   // REMOVE THIS STUB
-
+        WordTreeNode endNode = this.getPrefixNode(word);
+        if (endNode.toString().equals(word) && endNode.endOfWord) {
+            return true;
+        } else {
+            return false;
+        }
         //   ADD YOUR CODE ABOVE HERE
     }
 
@@ -108,6 +120,12 @@ public class WordTree {
      */
     public ArrayList<String> getListPrefixMatches(String prefix) {
         //  ADD YOUR CODE BELOW
+        ArrayList<String> output = new ArrayList<String>();
+        if (this.getPrefix(prefix).equals(prefix)) {
+            return null;
+        }
+        WordTreeNode starter = this.getPrefixNode(prefix);
+
 
         return null;   //  REMOVE THIS STUB
 
@@ -247,6 +265,13 @@ public class WordTree {
 
     public WordTreeNode getRoot() {
         return root;
+    }
+    private boolean treeSearch(ArrayList<String> inputList, WordTreeNode inputNode) {
+        boolean success = false;
+        for (int i = 0; i < 256; i++) {
+
+        }
+        return success;
     }
 
 
