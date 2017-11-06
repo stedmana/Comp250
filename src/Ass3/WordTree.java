@@ -31,6 +31,22 @@ public class WordTree {
         System.out.println("hello");
         System.out.println(test.getPrefix("cdDqu"));
         System.out.println(test.getPrefix("Dank memes for lies"));
+        test.insert("hello");
+        test.insert("heard");
+        test.insert("hi");
+        test.insert("q");
+        test.insert("h");
+        test.insert("heck");
+        test.insert("hell");
+        test.insert("heinous");
+        test.insert("hel");
+        test.insert("he");
+        test.insert("cd");
+
+        for (String input:test.getListPrefixMatches("")) {
+            System.out.println(input);
+
+        }
         //System.out.println(test.getRoot().getChild('c').getChild('d').getChild('D').toString());
     }
 
@@ -121,13 +137,14 @@ public class WordTree {
     public ArrayList<String> getListPrefixMatches(String prefix) {
         //  ADD YOUR CODE BELOW
         ArrayList<String> output = new ArrayList<String>();
-        if (this.getPrefix(prefix).equals(prefix)) {
+        if (!this.getPrefix(prefix).equals(prefix)) {
             return null;
         }
+
         WordTreeNode starter = this.getPrefixNode(prefix);
+        treeSearch(output,starter);
 
-
-        return null;   //  REMOVE THIS STUB
+        return output;   //  REMOVE THIS STUB
 
         //  ADD YOUR CODE ABOVE HERE
     }
@@ -204,7 +221,9 @@ public class WordTree {
 
         public WordTreeNode createChild(char c) {
             WordTreeNode child = new WordTreeNode();
-
+            if (this.getChild(c) != null) {
+                return this.getChild(c);
+            }
             // ADD YOUR CODE BELOW HERE
             child.charInParent = c;
             child.depth = this.depth + 1;
@@ -266,12 +285,17 @@ public class WordTree {
     public WordTreeNode getRoot() {
         return root;
     }
-    private boolean treeSearch(ArrayList<String> inputList, WordTreeNode inputNode) {
+    private void treeSearch(ArrayList<String> inputList, WordTreeNode inputNode) {
         boolean success = false;
-        for (int i = 0; i < 256; i++) {
 
+        for (int i = 0; i < 256; i++) {
+            if (inputNode.getChild((char)i) != null) {
+                treeSearch(inputList,inputNode.getChild((char)i));
+            }
         }
-        return success;
+        if (inputNode.isEndOfWord()) {
+            inputList.add(inputNode.toString());
+        }
     }
 
 
