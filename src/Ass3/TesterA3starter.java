@@ -51,9 +51,14 @@ public class TesterA3starter
  *    that you obtained using the given text file, that's fine. 
  *		
  *	  You will need to put a different pathname in here.
- */ 		
+ */
+// /Users/Alex/Developer/Comp250/src/Ass3
+		//list.add("a");
  	//	String fileName = "C:\\Users\\Michael\\Dropbox\\Eclipse (Yoga)\\250\\src\\assignments2017\\a3\\bodybuilding.txt";
-    //	list = readWordsFromFile(fileName);
+		String fileName = "/Users/Alex/Developer/Comp250/src/Ass3/bodybuilding.txt";
+		//list = readWordsFromFile(fileName);
+    	list = readWordsFromFile(fileName);
+
  
  	// String fileName = "//home//ramchalamkr//bodybuilding.txt";
 	// list = readWordsFromFile(fileName);
@@ -92,6 +97,7 @@ public class TesterA3starter
 		System.out.println("longest prefix of door = " + WordTree.getPrefix("door"));
 		System.out.println("longest prefix of any = " + WordTree.getPrefix("any"));
 		System.out.println("longest prefix of cat = " + WordTree.getPrefix("cat"));
+		//System.out.println("longest prefix ")
 
 		/* Test getListPrefixMatches, print input and output
 		 * Try prefixes "a", "do", "c" (should return [a, and, ax], [dog, door, dot], [ ] respectively)
@@ -102,6 +108,7 @@ public class TesterA3starter
 		System.out.println("a = " + WordTree.getListPrefixMatches("a"));
 		System.out.println("do = " + WordTree.getListPrefixMatches("do"));
 		System.out.println("c = " + WordTree.getListPrefixMatches("c"));
+		System.out.println(WordTree.getListPrefixMatches(""));
 
 	}
 }

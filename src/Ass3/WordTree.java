@@ -26,8 +26,10 @@ public class WordTree {
         test.getRoot().endOfWord = true;
         test.getRoot().getChild('c').createChild('d');
         test.getRoot().getChild('c').getChild('d').createChild('D');
+        test.getRoot().createChild('a');
         test.insert("Dank memes for lyfe");
         test.insert("cdEjk");
+        test.insert("a");
         System.out.println("hello");
         System.out.println(test.getPrefix("cdDqu"));
         System.out.println(test.getPrefix("Dank memes for lies"));
@@ -39,11 +41,13 @@ public class WordTree {
         test.insert("heck");
         test.insert("hell");
         test.insert("heinous");
+        test.insert("andy");
+        //test.insert("anthroposcene");
         test.insert("hel");
         test.insert("he");
         test.insert("cd");
 
-        for (String input:test.getListPrefixMatches("")) {
+        for (String input:test.getListPrefixMatches("a")) {
             System.out.println(input);
 
         }
@@ -67,6 +71,9 @@ public class WordTree {
         for (int i = workingNode.toString().length(); i < word.length(); i ++) {
             workingNode.createChild(word.charAt(i));
             workingNode = workingNode.getChild(word.charAt(i));
+            if (i == word.length() - 1) {
+                workingNode.endOfWord = true;
+            }
         }
         workingNode.endOfWord = true;
 
@@ -140,7 +147,6 @@ public class WordTree {
         if (!this.getPrefix(prefix).equals(prefix)) {
             return null;
         }
-
         WordTreeNode starter = this.getPrefixNode(prefix);
         treeSearch(output,starter);
 
@@ -227,7 +233,9 @@ public class WordTree {
             // ADD YOUR CODE BELOW HERE
             child.charInParent = c;
             child.depth = this.depth + 1;
-            endOfWord = false;
+            if (!endOfWord) {
+                endOfWord = false;
+            }
             child.children = new WordTreeNode[NUMCHILDREN];
             // ADD YOUR CODE ABOVE HERE
 
