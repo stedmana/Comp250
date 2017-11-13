@@ -2,6 +2,8 @@ package Ass3;
 
 //COMP 250 - Introduction to Computer Science - Fall 2017
 //Assignment #3 - Question 1
+//Name: Alexander Stedman
+//Student ID: 260627145
 
 import java.util.*;
 
@@ -18,7 +20,7 @@ public class WordTree {
     // Empty tree has just a root node.  All the children are null.
 
     //this is a test method
-    public static void main(String[] args) {
+/*    public static void main(String[] args) {
         WordTree test = new WordTree();
         test.getRoot().createChild('c');
         test.getRoot().createChild('d');
@@ -52,7 +54,7 @@ public class WordTree {
 
         }
         //System.out.println(test.getRoot().getChild('c').getChild('d').getChild('D').toString());
-    }
+    }*/
 
     public WordTree() {
         root = new WordTreeNode();

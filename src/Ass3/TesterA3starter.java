@@ -57,7 +57,7 @@ public class TesterA3starter
  	//	String fileName = "C:\\Users\\Michael\\Dropbox\\Eclipse (Yoga)\\250\\src\\assignments2017\\a3\\bodybuilding.txt";
 		String fileName = "/Users/Alex/Developer/Comp250/src/Ass3/bodybuilding.txt";
 		//list = readWordsFromFile(fileName);
-    	list = readWordsFromFile(fileName);
+    	//list = readWordsFromFile(fileName);
 
  
  	// String fileName = "//home//ramchalamkr//bodybuilding.txt";
