@@ -1,4 +1,4 @@
-package hashMap;
+package Ass4.hashMap;
 
 /**
  * This class represents a single song

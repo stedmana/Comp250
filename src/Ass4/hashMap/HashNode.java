@@ -1,4 +1,4 @@
-package hashMap;
+package Ass4.hashMap;
 
 
 public  class HashNode<K,V> implements Cloneable{

@@ -1,4 +1,6 @@
-package hashMap;
+package Ass4.hashMap;
+
+import HashNode.java;
 
 
 public class HashLinkedList<K,V>{
