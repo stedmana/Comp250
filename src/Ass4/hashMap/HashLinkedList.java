@@ -28,6 +28,7 @@ public class HashLinkedList<K,V>{
 		HashNode<K,V> temp = new HashNode<K,V>(key, value);
 		temp.next = head;
 		this.head = temp;
+		size = size + 1;
 		// ADD CODE ABOVE HERE
 	}
 
@@ -64,6 +65,9 @@ public class HashLinkedList<K,V>{
 		// ADD CODE BELOW HERE
 		HashNode<K,V> currentNode = this.head;
 		this.head = currentNode.next;
+		if (size > 0) {
+			size = size - 1;
+		}
 		// ADD CODE ABOVE HERE
 		return currentNode; //CODE STUB.. REMOVE THIS LINE
 	}
@@ -74,7 +78,12 @@ public class HashLinkedList<K,V>{
 
 	public HashNode<K,V> remove(K key){
 		// ADD CODE BELOW HERE
+		HashNode<K,V> currentNode = this.head;
+		while (currentNode.getNext().next != null) {
+			if (currentNode.getNext().getKey().equals(key)) {
 
+			}
+		}
 		// ADD CODE ABOVE HERE
 		return null; // removing failed
 	}
