@@ -100,6 +100,12 @@ class MyHashTable<K,V> {
 	public V get(K key) {
 
 		//  ADD YOUR CODE BELOW HERE
+		int keyHash = this.hashFunction(key);
+		for (HashLinkedList<K,V> hashList: this.buckets) {
+			if (hashFunction(hashList.getFirst().getKey()) == keyHash) {
+				return hashList.getListNode(key).getValue();
+			}
+		}
 
 
 		//  ADD YOUR CODE ABOVE HERE
