@@ -82,10 +82,25 @@ public class HashLinkedList<K,V>{
 	public HashNode<K,V> remove(K key){
 		// ADD CODE BELOW HERE
 		HashNode<K,V> currentNode = this.head;
-		while (currentNode.getNext().next != null) {
-			if (currentNode.getNext().getKey().equals(key)) {
+		HashNode<K,V> returnNode;
+		if (size == 0) {
+			return null;
+		}
+		if (currentNode.getKey().equals(key)) {
+			this.size--;
+			returnNode = currentNode;
+			this.head = returnNode.next;
 
+			return returnNode;
+		}
+		while (currentNode.getNext() != null) {
+			if (currentNode.getNext().getKey().equals(key)) {
+				this.size--;
+				returnNode = currentNode.getNext();
+				currentNode.next = returnNode.getNext();
+				return returnNode;
 			}
+			currentNode = currentNode.getNext();
 		}
 		// ADD CODE ABOVE HERE
 		return null; // removing failed
@@ -113,7 +128,19 @@ public class HashLinkedList<K,V>{
 	}
 
 	//ADD YOUR HELPER  METHODS BELOW THIS
+	public String toString() {
+		String output = "";
+		if (size == 0) {
+			return output;
+		}
+		HashNode<K,V> workingNode = this.head;
+		while (workingNode != null) {
+			output = output + workingNode.toString() + "\n";
+			workingNode = workingNode.getNext();
 
+		}
+		return output;
+	}
 
 	//ADD YOUR HELPER METHODS ABOVE THIS
 
