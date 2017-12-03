@@ -63,6 +63,9 @@ public class HashLinkedList<K,V>{
 
 	public HashNode<K,V> removeFirst(){
 		// ADD CODE BELOW HERE
+		if (size == 0) {
+			return null;
+		}
 		HashNode<K,V> currentNode = this.head;
 		this.head = currentNode.next;
 		if (size > 0) {
