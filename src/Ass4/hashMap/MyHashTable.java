@@ -40,7 +40,7 @@ class MyHashTable<K,V> {
 
 		//  ADD YOUR CODE BELOW HERE
 		this.numBuckets = numBuckets;
-		buckets = new ArrayList<>(numBuckets);
+		this.buckets = new ArrayList<>(numBuckets);
 
 
 		//  ADD YOUR CODE ABOVE HERE
@@ -157,7 +157,16 @@ class MyHashTable<K,V> {
 	public void rehash()
 	{
 		//   ADD YOUR CODE BELOW HERE
-
+		this.numBuckets *= 2;
+		ArrayList<HashLinkedList<K,V>> oldList = this.buckets;
+		this.buckets = new ArrayList<>(this.numBuckets);
+		for (HashLinkedList<K,V> tempList: oldList) {
+			while (tempList.getFirst() != null) {
+				HashNode<K,V> tempNode = tempList.removeFirst();
+				put(tempNode.getKey(),tempNode.getValue());
+			}
+			
+		}
 		//   ADD YOUR CODE ABOVE HERE
 
 	}

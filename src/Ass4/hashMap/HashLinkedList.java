@@ -142,6 +142,9 @@ public class HashLinkedList<K,V>{
 		return output;
 	}
 
+	HashNode<K,V> getFirst() {
+		return this.head;
+	}
 	//ADD YOUR HELPER METHODS ABOVE THIS
 
 
