@@ -39,6 +39,7 @@ class MyHashTable<K,V> {
 	MyHashTable(int numBuckets) {
 
 		//  ADD YOUR CODE BELOW HERE
+		this.numBuckets = numBuckets;
 		buckets = new ArrayList<>(numBuckets);
 
 
@@ -268,6 +269,9 @@ class MyHashTable<K,V> {
 			// not implemented,  but must be declared because it is in the Iterator interface
 
 		}		
+	}
+	private double getLoadFactor() {
+		return entryCount / numBuckets;
 	}
 
 }

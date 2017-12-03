@@ -28,5 +28,8 @@ public class Tester {
         System.out.println(list.removeFirst());
         System.out.println(list.removeFirst());
         System.out.println(list.remove(2));
+
+        MyHashTable<Integer,Integer> newTable = new MyHashTable<>(15);
+
     }
 }
