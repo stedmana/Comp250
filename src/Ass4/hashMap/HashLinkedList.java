@@ -86,14 +86,14 @@ public class HashLinkedList<K,V>{
 		if (size == 0) {
 			return null;
 		}
-		if (currentNode.getKey().equals(key)) {
+		if (currentNode.getKey().equals(key)) { //Checks if the head has the key value
 			this.size--;
 			returnNode = currentNode;
 			this.head = returnNode.next;
 
 			return returnNode;
 		}
-		while (currentNode.getNext() != null) {
+		while (currentNode.getNext() != null) { //Checks if the rest of the list has the key
 			if (currentNode.getNext().getKey().equals(key)) {
 				this.size--;
 				returnNode = currentNode.getNext();

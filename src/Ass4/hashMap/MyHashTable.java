@@ -39,6 +39,7 @@ class MyHashTable<K,V> {
 	MyHashTable(int numBuckets) {
 
 		//  ADD YOUR CODE BELOW HERE
+		buckets = new ArrayList<>(numBuckets);
 
 
 		//  ADD YOUR CODE ABOVE HERE
