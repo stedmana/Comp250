@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6593e1ac-6497-4324-a93d-c4faac246b82" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/Ass4/hashMap/HashLinkedList.java" afterPath="$PROJECT_DIR$/src/Ass4/hashMap/HashLinkedList.java" />
+      <change beforePath="$PROJECT_DIR$/src/Ass4/hashMap/HashNode.java" afterPath="$PROJECT_DIR$/src/Ass4/hashMap/HashNode.java" />
       <change beforePath="$PROJECT_DIR$/src/Ass4/hashMap/MyHashTable.java" afterPath="$PROJECT_DIR$/src/Ass4/hashMap/MyHashTable.java" />
       <change beforePath="$PROJECT_DIR$/src/Assignment 1/TesterPosted.java" afterPath="$PROJECT_DIR$/src/Assignment 1/TesterPosted.java" />
     </list>
@@ -19,12 +21,14 @@
       <file leaf-file-name="MyHashTable.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Ass4/hashMap/MyHashTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="105" column="23" lean-forward="false" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+            <state relative-caret-position="-53">
+              <caret line="220" column="4" lean-forward="false" selection-start-line="220" selection-start-column="4" selection-end-line="220" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5764#5765#0" expanded="true" />
-                <element signature="e#5801#5802#0" expanded="true" />
+                <element signature="method#values#0;class#MyHashTable#0" expanded="false" />
+                <element signature="method#toString#0;class#MyHashTable#0" expanded="false" />
+                <element signature="e#6049#6050#0" expanded="true" />
+                <element signature="e#6086#6087#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -33,15 +37,15 @@
       <file leaf-file-name="HashLinkedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Ass4/hashMap/HashLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+            <state relative-caret-position="230">
+              <caret line="160" column="5" lean-forward="true" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
               <folding>
-                <element signature="e#2276#2277#0" expanded="true" />
-                <element signature="e#2311#2312#0" expanded="true" />
-                <element signature="e#2325#2326#0" expanded="true" />
-                <element signature="e#2348#2349#0" expanded="true" />
-                <element signature="e#2698#2699#0" expanded="true" />
-                <element signature="e#2721#2722#0" expanded="true" />
+                <element signature="e#2305#2306#0" expanded="true" />
+                <element signature="e#2340#2341#0" expanded="true" />
+                <element signature="e#2354#2355#0" expanded="true" />
+                <element signature="e#2377#2378#0" expanded="true" />
+                <element signature="e#2727#2728#0" expanded="true" />
+                <element signature="e#2750#2751#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,12 +54,15 @@
       <file leaf-file-name="HashNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Ass4/hashMap/HashNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="451">
+              <caret line="28" column="61" lean-forward="false" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
               <folding>
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#646#647#0" expanded="true" />
-                <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
+                <element signature="e#551#552#0" expanded="true" />
+                <element signature="e#841#842#0" expanded="true" />
+                <element signature="e#863#864#0" expanded="true" />
+                <element signature="e#919#920#0" expanded="true" />
+                <element signature="e#942#943#0" expanded="true" />
                 <element signature="method#toString#0;class#HashNode#0" expanded="false" />
               </folding>
             </state>
@@ -124,6 +131,7 @@
         <option value="$PROJECT_DIR$/src/InClass/Country.java" />
         <option value="$PROJECT_DIR$/src/InClass/Main.java" />
         <option value="$PROJECT_DIR$/src/Ass4/hashMap/Tester.java" />
+        <option value="$PROJECT_DIR$/src/Ass4/hashMap/HashNode.java" />
         <option value="$PROJECT_DIR$/src/Ass4/hashMap/HashLinkedList.java" />
         <option value="$PROJECT_DIR$/src/Ass4/hashMap/MyHashTable.java" />
       </list>
@@ -324,7 +332,7 @@
       <option name="presentableId" value="Default" />
       <updated>1511711831053</updated>
       <workItem from="1511711832593" duration="7607000" />
-      <workItem from="1512321153708" duration="5887000" />
+      <workItem from="1512321153708" duration="9142000" />
     </task>
     <task id="LOCAL-00001" summary="Recreated project in intelliJ">
       <created>1511711905807</created>
@@ -389,11 +397,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512333330037</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finished first go at get(key)">
+      <created>1512334149044</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1512334149044</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13494000" />
+    <option name="totallyTimeSpent" value="16749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -441,7 +456,8 @@
     <MESSAGE value="Added inclass stuff" />
     <MESSAGE value="Added to hashtable" />
     <MESSAGE value="Finished first go at rehash" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished first go at rehash" />
+    <MESSAGE value="Finished first go at get(key)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished first go at get(key)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -455,12 +471,12 @@
         <state relative-caret-position="1155">
           <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
-            <element signature="e#2276#2277#0" expanded="true" />
-            <element signature="e#2311#2312#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2348#2349#0" expanded="true" />
-            <element signature="e#2698#2699#0" expanded="true" />
-            <element signature="e#2721#2722#0" expanded="true" />
+            <element signature="e#2305#2306#0" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+            <element signature="e#2354#2355#0" expanded="true" />
+            <element signature="e#2377#2378#0" expanded="true" />
+            <element signature="e#2727#2728#0" expanded="true" />
+            <element signature="e#2750#2751#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -545,9 +561,12 @@
         <state relative-caret-position="45">
           <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding>
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
             <element signature="method#toString#0;class#HashNode#0" expanded="false" />
           </folding>
         </state>
@@ -559,8 +578,10 @@
           <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5764#5765#0" expanded="true" />
-            <element signature="e#5801#5802#0" expanded="true" />
+            <element signature="method#values#0;class#MyHashTable#0" expanded="false" />
+            <element signature="method#toString#0;class#MyHashTable#0" expanded="false" />
+            <element signature="e#6049#6050#0" expanded="true" />
+            <element signature="e#6086#6087#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -702,12 +723,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ass4/hashMap/HashNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="451">
+          <caret line="28" column="61" lean-forward="false" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
           <folding>
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
             <element signature="method#toString#0;class#HashNode#0" expanded="false" />
           </folding>
         </state>
@@ -715,27 +739,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ass4/hashMap/HashLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+        <state relative-caret-position="230">
+          <caret line="160" column="5" lean-forward="true" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
           <folding>
-            <element signature="e#2276#2277#0" expanded="true" />
-            <element signature="e#2311#2312#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2348#2349#0" expanded="true" />
-            <element signature="e#2698#2699#0" expanded="true" />
-            <element signature="e#2721#2722#0" expanded="true" />
+            <element signature="e#2305#2306#0" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+            <element signature="e#2354#2355#0" expanded="true" />
+            <element signature="e#2377#2378#0" expanded="true" />
+            <element signature="e#2727#2728#0" expanded="true" />
+            <element signature="e#2750#2751#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ass4/hashMap/MyHashTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="105" column="23" lean-forward="false" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+        <state relative-caret-position="-53">
+          <caret line="220" column="4" lean-forward="false" selection-start-line="220" selection-start-column="4" selection-end-line="220" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5764#5765#0" expanded="true" />
-            <element signature="e#5801#5802#0" expanded="true" />
+            <element signature="method#values#0;class#MyHashTable#0" expanded="false" />
+            <element signature="method#toString#0;class#MyHashTable#0" expanded="false" />
+            <element signature="e#6049#6050#0" expanded="true" />
+            <element signature="e#6086#6087#0" expanded="true" />
           </folding>
         </state>
       </provider>

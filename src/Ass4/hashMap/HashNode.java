@@ -15,10 +15,19 @@ public  class HashNode<K,V> implements Cloneable{
 		this.key = key;
 		this.next = null;
 	}
+	HashNode(K key, V value, HashNode<K,V> toNext) {
+		this.value = value;
+		this.key = key;
+		this.next = toNext;
+	}
 
 	//ADD HELPER METHODS BELOW HERE
 
 	// Hint: Implement a  'Public' clone() method
+	@Override
+	public HashNode<K,V> clone() {
+		return new HashNode<>(this.key,this.value,this.next);
+	}
 
 	//ADD HELPER METHODS ABOVE HERE
 

@@ -120,7 +120,11 @@ class MyHashTable<K,V> {
 	public V remove(K key) {
 
 		//  ADD YOUR CODE BELOW HERE
-
+		for (HashLinkedList<K,V> currentList: this.buckets) {
+			if (currentList.getListNode(key) != null) {
+				return currentList.remove(key).getValue();
+			}
+		}
 
 		//  ADD  YOUR CODE ABOVE HERE
 
@@ -202,13 +206,12 @@ class MyHashTable<K,V> {
 		ArrayList<K>  listKeys = new ArrayList<K>();
 
 		//   ADD YOUR CODE BELOW HERE
-
+		for (HashLinkedList<K,V> tempList : this.buckets) {
+			listKeys.addAll(tempList.keys());
+		}
+		return listKeys;
 
 		//   ADD YOUR CODE ABOVE HERE
-
-
-
-		return null;   //  CODE STUB.   REMOVE THIS LINE.
 	}
 
 	/*
@@ -219,12 +222,11 @@ class MyHashTable<K,V> {
 		ArrayList<V>  listValues = new ArrayList<V>();
 
 		//   ADD YOUR CODE BELOW HERE
-
+		for (HashLinkedList<K,V> tempList: this.buckets) {
+			listValues.addAll(tempList.values());
+		}
+		return listValues;
 		//   ADD YOUR CODE ABOVE HERE
-
-
-
-		return null; //CODE STUB. REMOVE THIS LINE.
 	}
 
 	@Override
