@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6593e1ac-6497-4324-a93d-c4faac246b82" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Ass4/hashMap/HashLinkedList.java" afterPath="$PROJECT_DIR$/src/Ass4/hashMap/HashLinkedList.java" />
-      <change beforePath="$PROJECT_DIR$/src/Ass4/hashMap/HashNode.java" afterPath="$PROJECT_DIR$/src/Ass4/hashMap/HashNode.java" />
-      <change beforePath="$PROJECT_DIR$/src/Ass4/hashMap/MyHashTable.java" afterPath="$PROJECT_DIR$/src/Ass4/hashMap/MyHashTable.java" />
       <change beforePath="$PROJECT_DIR$/src/Assignment 1/TesterPosted.java" afterPath="$PROJECT_DIR$/src/Assignment 1/TesterPosted.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -387,7 +384,7 @@
       <option name="presentableId" value="Default" />
       <updated>1511711831053</updated>
       <workItem from="1511711832593" duration="7607000" />
-      <workItem from="1512321153708" duration="16352000" />
+      <workItem from="1512321153708" duration="16365000" />
     </task>
     <task id="LOCAL-00001" summary="Recreated project in intelliJ">
       <created>1511711905807</created>
@@ -487,11 +484,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512495675357</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fixed bugs">
+      <created>1512497285164</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1512497285164</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23959000" />
+    <option name="totallyTimeSpent" value="23972000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="878" extended-state="0" />
