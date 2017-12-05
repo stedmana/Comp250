@@ -104,9 +104,10 @@ class MyHashTable<K,V> {
                 newList.add(key,value);
                 this.buckets.add(newList);
             }
-
-
-        if (returnNode == null) {
+            if (getLoadFactor() >= MAX_LOAD_FACTOR) {
+                this.rehash();
+            }
+            if (returnNode == null) {
                 entryCount++;
                 return null;
         }
@@ -143,15 +144,22 @@ class MyHashTable<K,V> {
 	public V remove(K key) {
 
 		//  ADD YOUR CODE BELOW HERE
+        V returnValue = null;
 		for (HashLinkedList<K,V> currentList: this.buckets) {
 			if (currentList.getListNode(key) != null) {
 			    this.entryCount--;
-				return currentList.remove(key).getValue();
+			    returnValue = currentList.remove(key).getValue();
+
 			}
 		}
+        for (int i = 0; i < this.buckets.size();i++) {
+		    while ((this.buckets.get(i).size() == 0)&& i < this.buckets.size()) {
+		        this.buckets.remove(i);
+            }
+        }
 
 		//  ADD  YOUR CODE ABOVE HERE
-
+        if (returnValue != null) return returnValue;
 		return(null);
 	}
 
@@ -191,9 +199,14 @@ class MyHashTable<K,V> {
 	public void rehash()
 	{
 		//   ADD YOUR CODE BELOW HERE
+
+
 		this.numBuckets *= 2;
 		ArrayList<HashLinkedList<K,V>> oldList = this.buckets;
 		this.buckets = new ArrayList<>(this.numBuckets);
+
+
+
 		for (HashLinkedList<K,V> tempList: oldList) {
 			while (tempList.getFirst() != null) {
 				HashNode<K,V> tempNode = tempList.removeFirst();
@@ -314,7 +327,7 @@ class MyHashTable<K,V> {
 		}		
 	}
 	private double getLoadFactor() {
-		return entryCount / numBuckets;
+		return (double)entryCount / (double)numBuckets;
 	}
 
     ArrayList< HashLinkedList<K,V> > getBuckets() {
