@@ -4,6 +4,7 @@ public class Tester {
     public static void main(String[] args) {
         HashLinkedList<Integer, Integer> list = new HashLinkedList<>();
         HashLinkedList<Integer, Song> songList = new HashLinkedList<>();
+        MyHashTable<Integer,Integer> testTable = new MyHashTable<>(10);
         Song s1 = new Song("hello","adelle", 1969);
         Song s2 = new Song("Goodbye", "Emperoro", 2100);
         Song s3 = new Song("DumDeDum", "Juke and Jakes", 2020);
@@ -17,6 +18,8 @@ public class Tester {
         list.add(2,7);
         list.add(2,9);
         list.add(3,9);
+        //testTable.put(s1.getTitle().hashCode(),s1);
+
 
         System.out.println(list.toString());
         System.out.println(songList.toString());

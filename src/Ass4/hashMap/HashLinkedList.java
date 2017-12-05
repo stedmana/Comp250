@@ -3,7 +3,7 @@ package Ass4.hashMap;
 
 import java.util.ArrayList;
 
-public class HashLinkedList<K,V>{
+public class HashLinkedList<K,V> {
 	/*
 	 * Fields
 	 */
@@ -153,6 +153,7 @@ public class HashLinkedList<K,V>{
 		HashNode<K,V> currentNode = this.head;
 		while (currentNode != null) {
 			keyList.add(currentNode.getKey());
+			currentNode = currentNode.getNext();
 		}
 		if (keyList.size() == 0) {
 			return null;
@@ -165,6 +166,7 @@ public class HashLinkedList<K,V>{
 		HashNode<K,V> currentNode = this.head;
 		while (currentNode != null) {
 			valueList.add(currentNode.getValue());
+			currentNode = currentNode.getNext();
 		}
 		if (valueList.size() == 0) {
 			return null;
@@ -172,5 +174,19 @@ public class HashLinkedList<K,V>{
 		return valueList;
 	}
 
-
+	public HashNode<K, V> get(int element) {
+		HashNode<K,V> toReturn = this.head;
+		for (int i = 0; (i < element) || (i < size); i++) {
+			toReturn = toReturn.getNext();
+		}
+		return toReturn;
+	}
+	public void add(HashNode<K,V> toAdd) {
+		if (toAdd != null) {
+			HashNode<K, V> temp = toAdd.clone();
+			temp.next = this.head;
+			this.head = temp;
+			size++;
+		}
+	}
 }

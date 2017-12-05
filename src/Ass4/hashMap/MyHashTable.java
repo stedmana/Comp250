@@ -88,9 +88,30 @@ class MyHashTable<K,V> {
 	public  V  put(K key, V value) {
 
 		//  ADD YOUR CODE BELOW HERE
+        HashNode<K,V> returnNode = null;
+        boolean added = false;
+            for (HashLinkedList<K,V> hashList:this.buckets) {
+                if (hashFunction(hashList.getFirst().getKey()) == hashFunction(key)) {
+                    if (this.keys().contains(key)) {
+                        returnNode = hashList.remove(key);
+                    }
+                    hashList.add(key,value);
+                    added = true;
+                }
+            }
+            if (!added) {
+                HashLinkedList<K,V> newList = new HashLinkedList<>();
+                newList.add(key,value);
+                this.buckets.add(newList);
+            }
 
-		//  ADD YOUR CODE ABOVE HERE
-		return null;
+
+        if (returnNode == null) {
+                entryCount++;
+                return null;
+        }
+		return returnNode.getValue();
+        //  ADD YOUR CODE ABOVE HERE
 	}
 
 	/**
@@ -103,7 +124,9 @@ class MyHashTable<K,V> {
 		int keyHash = this.hashFunction(key);
 		for (HashLinkedList<K,V> hashList: this.buckets) {
 			if (hashFunction(hashList.getFirst().getKey()) == keyHash) {
-				return hashList.getListNode(key).getValue();
+			    if (hashList.getListNode(key) != null) {
+                    return hashList.getListNode(key).getValue();
+                }
 			}
 		}
 
@@ -122,6 +145,7 @@ class MyHashTable<K,V> {
 		//  ADD YOUR CODE BELOW HERE
 		for (HashLinkedList<K,V> currentList: this.buckets) {
 			if (currentList.getListNode(key) != null) {
+			    this.entryCount--;
 				return currentList.remove(key).getValue();
 			}
 		}
@@ -261,8 +285,10 @@ class MyHashTable<K,V> {
 		{
 
 			//  ADD YOUR CODE BELOW HERE
-
-
+            allEntries = new HashLinkedList<>();
+            for (K key: MyHashTable.this.keys()) {
+                allEntries.add(getNode(key));
+            }
 			//  ADD YOUR CODE ABOVE HERE
 
 		}
@@ -290,5 +316,24 @@ class MyHashTable<K,V> {
 	private double getLoadFactor() {
 		return entryCount / numBuckets;
 	}
+
+    ArrayList< HashLinkedList<K,V> > getBuckets() {
+	    return this.buckets;
+    }
+    public HashNode<K, V> getNode(K key) {
+
+        //  ADD YOUR CODE BELOW HERE
+        int keyHash = this.hashFunction(key);
+        for (HashLinkedList<K,V> hashList: this.buckets) {
+            if (hashFunction(hashList.getFirst().getKey()) == keyHash) {
+                return hashList.getListNode(key);
+            }
+        }
+
+
+        //  ADD YOUR CODE ABOVE HERE
+
+        return null;
+    }
 
 }
