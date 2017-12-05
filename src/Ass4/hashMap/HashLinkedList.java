@@ -6,6 +6,7 @@ import java.util.ArrayList;
 public class HashLinkedList<K,V> {
 	/*
 	 * Fields
+	 * Author: Alex Stedman -- 260627145
 	 */
 	private HashNode<K,V> head;
 

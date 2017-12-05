@@ -6,7 +6,8 @@ import java.util.Iterator;
 
 class MyHashTable<K,V> {
 	/*
-	 *   Number of entries in the HashTable. 
+	 *   Number of entries in the HashTable.
+	 *   Author: Alex Stedman -- 260627145
 	 */
 	private int entryCount = 0;
 

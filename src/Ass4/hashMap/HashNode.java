@@ -7,6 +7,7 @@ public  class HashNode<K,V> implements Cloneable{
 	public HashNode<K,V> next;
 
 	/*
+	 * Author: Alex Stedman -- 260627145
 	 * Constructor.
 	 */
 
