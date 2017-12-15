@@ -1,8 +1,6 @@
 package Ass4.hashMap;
 
 
-import java.util.ArrayList;
-
 public class HashLinkedList<K,V> {
 	/*
 	 * Fields
@@ -149,31 +147,6 @@ public class HashLinkedList<K,V> {
 		return this.head;
 	}
 	//ADD YOUR HELPER METHODS ABOVE THIS
-	public ArrayList<K> keys() {
-		ArrayList<K> keyList = new ArrayList<K>();
-		HashNode<K,V> currentNode = this.head;
-		while (currentNode != null) {
-			keyList.add(currentNode.getKey());
-			currentNode = currentNode.getNext();
-		}
-		if (keyList.size() == 0) {
-			return null;
-		}
-		return keyList;
-	}
-
-	public ArrayList<V> values() {
-		ArrayList<V> valueList = new ArrayList<V>();
-		HashNode<K,V> currentNode = this.head;
-		while (currentNode != null) {
-			valueList.add(currentNode.getValue());
-			currentNode = currentNode.getNext();
-		}
-		if (valueList.size() == 0) {
-			return null;
-		}
-		return valueList;
-	}
 
 	public HashNode<K, V> get(int element) {
 		HashNode<K,V> toReturn = this.head;

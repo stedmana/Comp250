@@ -245,7 +245,15 @@ class MyHashTable<K,V> {
 
 		//   ADD YOUR CODE BELOW HERE
 		for (HashLinkedList<K,V> tempList : this.buckets) {
-			listKeys.addAll(tempList.keys());
+			HashNode<K,V> tempNode = tempList.getFirst();
+			if (tempNode.getKey() != null) {
+				listKeys.add(tempNode.getKey());
+			}
+			while (tempNode.getNext() != null) {
+				tempNode = tempNode.getNext();
+				listKeys.add(tempNode.getKey());
+			}
+			//listKeys.addAll(tempList.keys());
 		}
 		return listKeys;
 
@@ -261,7 +269,15 @@ class MyHashTable<K,V> {
 
 		//   ADD YOUR CODE BELOW HERE
 		for (HashLinkedList<K,V> tempList: this.buckets) {
-			listValues.addAll(tempList.values());
+			HashNode<K,V> tempNode = tempList.getFirst();
+			if (tempNode.getValue() != null) {
+				listValues.add(tempNode.getValue());
+			}
+			while (tempNode.getNext() != null) {
+				tempNode = tempNode.getNext();
+				listValues.add(tempNode.getValue());
+			}
+			//listValues.addAll(tempList.values());
 		}
 		return listValues;
 		//   ADD YOUR CODE ABOVE HERE
