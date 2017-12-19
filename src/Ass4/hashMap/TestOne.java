@@ -1,4 +1,4 @@
-package assignments2017.a4.TesterForPosting;
+package Ass4.hashMap;
 
 import java.io.PrintStream;
 import java.util.HashMap;
@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class TestOne extends Test{
     private ArrayList<Song> songs;
-    private static String dataFile = "songs.txt";   //  NEED TO ADD DIRECTORY
+    private static String dataFile = "/Users/Alex/Developer/Comp250/src/Ass4/hashMap/songs.txt";   //  NEED TO ADD DIRECTORY
     TestOne(Integer timeOut){
 	super(timeOut);
 	SongList testCases = new SongList();
