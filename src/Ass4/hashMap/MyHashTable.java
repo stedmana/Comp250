@@ -154,7 +154,7 @@ class MyHashTable<K,V> {
 			}
 		}
         for (int i = 0; i < this.buckets.size();i++) {
-		    while ((this.buckets.get(i).size() == 0)&& i < this.buckets.size()) {
+		    while (((i < this.buckets.size()) &&this.buckets.get(i).size() == 0)&& i < this.buckets.size()) {
 		        this.buckets.remove(i);
             }
         }
