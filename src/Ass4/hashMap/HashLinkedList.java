@@ -1,6 +1,4 @@
 package Ass4.hashMap;
-
-
 public class HashLinkedList<K,V> {
 	/*
 	 * Fields
@@ -41,16 +39,13 @@ public class HashLinkedList<K,V> {
 	public HashNode<K,V> getListNode(K key){
 		// ADD CODE BELOW HERE
 		HashNode<K,V> currentNode = this.head;
-		while (currentNode.next != null) {
-			if (currentNode.getKey().equals(key)) {
+		while (currentNode != null){
+			if (currentNode.getKey().equals(key)){
 				return currentNode;
 			}
 			else {
 				currentNode = currentNode.next;
 			}
-		}
-		if (currentNode.getKey().equals(key)) {
-			return currentNode;
 		}
 		return null;
 		// ADD CODE ABOVE HERE
